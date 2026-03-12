@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Doctors - DNA Hospital</title>
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI;
+    background:#eef6ff;
+}
+header{
+    background:linear-gradient(to right,#003366,#00bfff);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+nav{
+    background:#001f3f;
+    padding:15px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+}
+nav a:hover{
+    color:cyan;
+}                                   
+.section-title{
+    text-align:center;
+    margin-top:40px;
+    font-size:30px;
+    color:#003366;
+}
+
+/* GRID LAYOUT */
+.doctors{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+    padding:50px;
+}
+
+/* CARD STYLE */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* SAME SIZE IMAGES */
+.card img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin:10px 0 5px;
+    color:#003366;
+}
+
+.card p{
+    margin:5px;
+    color:gray;
+}
+
+footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Meet Our Expert Doctors</h1>
+<p>Experienced | Dedicated | Caring</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="doctors.html">Doctors</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h2 class="section-title">Our Specialists</h2>
+
+<div class="doctors">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+<h3>Dr. Easha</h3>
+<p>Cardiologist</p>
+<p>15+ Years Experience</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f">
+<h3>Dr. Priya Sharma</h3>
+<p>Neurologist</p>
+<p>12+ Years Experience</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1612349316228-5942a9b489c2">
+<h3>Dr. Arjun Kumar</h3>
+<p>Orthopedic Surgeon</p>
+<p>18+ Years Experience</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2">
+<h3>Dr. Anjali Varma</h3>
+<p>Pediatrician</p>
+<p>10+ Years Experience</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d">
+<h3>Dr. Suresh Patel</h3>
+<p>General Physician</p>
+<p>20+ Years Experience</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54">
+<h3>Dr. Kalyan</h3>
+<p>Gynecologist</p>
+<p>14+ Years Experience</p>
+</div>
+
+</div>
+
+<footer>
+© 2026 DNA Hospital | Emergency: 108 | Phone: 9876543210
+</footer>
+
+</body>
+</html>

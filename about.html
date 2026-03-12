@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DNA Hospital - Home</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI;
+    background:#f0f8ff;
+}
+
+header{
+    background:linear-gradient(to right,#003366,#00bfff);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+nav{
+    background:#001f3f;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:cyan;
+}
+
+.hero{
+    background:url("https://ghealth121.com/wp-content/uploads/2022/01/KIMS-Hospital-Hyderabad.jpg") no-repeat center;
+    background-size:cover;
+    height:450px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero-box{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:20px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#00bfff;
+    color:white;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#003366;
+}
+.form-section{
+    padding:60px;
+    text-align:center;
+}
+
+form{
+    background:white;
+    padding:30px;
+    width:350px;
+    margin:auto;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+/* SUCCESS MESSAGE */
+.success{
+    display:none;
+    text-align:center;
+    padding:80px;
+}
+
+#success:target{
+    display:block;
+}
+
+.success h2{
+    color:green;
+}
+
+footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>DNA Super Speciality Hospital</h1>
+<p>Advanced Care | Trusted Doctors | 24/7 Service</p>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Facilities</a>
+<a href="doctors.html">Doctors</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+
+<div class="hero">
+<div class="hero-box">
+<h2>World-Class Healthcare</h2>
+<p>Modern Equipment | Experienced Specialists</p>
+<a href="#appointment"><button>Book Appointment</button></a>
+</div>
+</div>
+<div id="appointment" class="form-section">
+<h2>Book Your Appointment</h2>
+<form action="#success">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="Your Problem" required></textarea>
+<button type="submit">Submit</button>
+</form>
+</div>
+<!-- SUCCESS MESSAGE -->
+<div id="success" class="success">
+<h2>✅ Successfully! Your Appointment is Confirmed</h2>
+<p>Our team will contact you shortly.</p>
+<a href="index.html"><button>Back to Home</button></a>
+</div>
+<footer>
+© 2026 DNA Hospital | Emergency: 108 | Phone: 9876543210
+</footer>
+</body>
+</html>
